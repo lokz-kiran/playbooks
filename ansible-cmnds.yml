@@ -1,0 +1,6 @@
+ansible-playbook filename.yml ----> executes yml files
+ansible-playbook filename.yml --syntax-check
+ansible-playbook filename.yml --check
+ansible-galaxy init rolename   ----> creates role
+ansible-playbook filename.yml --tags taskname1,taskname2...
+ansible-playbook filename.yml --skip-tags taskname1,taskname2... 
