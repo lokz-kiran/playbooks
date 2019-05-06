@@ -1,0 +1,9 @@
+---
+ - hosts: any
+   user: root
+   become: true
+   vars: 
+     My_msg: "Hello form My_msg"
+   tasks:
+   - name: create a file.txt and copy msg
+     copy: dest=/home/ubuntu/file.txt content="{{My_msg}}"

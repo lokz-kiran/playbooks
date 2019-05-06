@@ -1,0 +1,7 @@
+---
+ - hosts: any or name or ip address
+   user: root
+   become: true
+   tasks:
+   - name: Install jdk or ant or maven or tomcat8 or apache2 or any
+     apt: name=jdk or ant or maven or tomcat8 apache2 state=latest

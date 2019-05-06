@@ -1,0 +1,19 @@
+---
+ tasks:
+ - name: 
+   copy:
+   notify:
+   - deploy index.html
+   - restart apache2
+ handlers:
+ - name: deploy index.html
+   copy: src=     dest= 
+ - name: restart apache2
+   service: name=apache2 state=restarted
+
+
+
+
+
+   ansible-playbooks filename.yml --syntax-check  #for syntax check 
+
