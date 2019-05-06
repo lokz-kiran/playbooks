@@ -1,0 +1,7 @@
+---
+ - hosts: any
+   user: root
+   become: true
+   tasks:
+   - name: deploying a file named index.html
+     copy: src=/var/www/html/index.html dest=/home/ubuntu

@@ -1,0 +1,7 @@
+---
+ - hosts: any
+   user: root
+   become: true
+   tasks:
+   - name: Deleting a file named lokz.txt
+     file: dest=/home/ubuntu/lokz.txt state=absent

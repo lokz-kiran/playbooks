@@ -1,0 +1,18 @@
+---
+ - hosts: any
+   user: root
+   become: true
+   tasks:
+   - name: install-ant
+     apt: name=ant state=latest
+     tags:
+       - install-apache2
+   - name: install-apache2
+     apt: name=apache2 state=latest
+
+
+
+
+
+     ansible-playbooks filename.yml --tags tasks-names
+     ansible-playbooks filename.yml --skip-tags tasks-names

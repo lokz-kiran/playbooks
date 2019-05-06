@@ -1,0 +1,15 @@
+---
+ - hosts: any
+   user: root
+   become: true
+   tasks:
+   - name: creating a file named lokz.txt
+     copy: dest=/home/ubuntu/lokz.txt content='Hello..!I am from ansible'
+
+
+     or
+    
+   tasks:
+     - name: creating a file named lokz.txt
+       copy: 
+         dest: /home/ubuntu/lokz.txt content 

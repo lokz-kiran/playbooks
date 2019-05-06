@@ -1,0 +1,9 @@
+---
+- hosts: any
+  user: root
+  become: true
+  tasks:
+  - name: restart or start or stop any service
+    apt: 
+    or 
+    yum: name=service.package name state= started or restarted or stopped 
